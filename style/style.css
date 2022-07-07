@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.posts_container .trigger_container button{
+    padding: 5px;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+}
+
+.posts_container .trigger_container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.posts_container .trigger_container button:hover{
+    box-shadow: 2px 2px 5px black;
+}
+
+.posts_container .trigger_container button.active{
+    border-bottom: 4px solid black;
+}
+
+/* пока нажата кнопка */
+.posts_container .trigger_container button:active{ 
+    transform: scale(0.9);
+}
+
+.posts_container{
+    display: flex;
+    width: 600px;
+    margin: 40px auto;
+    flex-direction: column;
+}
+
+.posts_container .content{
+    padding: 5px;
+    height: 400px;
+    /* добавляем скролл */
+    overflow-y: scroll; 
+    width: 100%;
+    border: 2px solid black;
+}
+
